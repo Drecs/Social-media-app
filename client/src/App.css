@@ -1,0 +1,386 @@
+/* App.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  background-color: dodgerblue;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px; /* Space between h1 and button */
+}
+
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+}
+
+.nav-link {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 300px;
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.title {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.body {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .like-section {
+  display: flex;
+  align-items: center;
+}
+
+.footer .like-section svg {
+  cursor: pointer;
+  margin-right: 5px; /* Space between the icon and the label */
+}
+
+/* CSS for liked posts (bright white icon) */
+.likeBttn {
+  color: #ffffff; /* Bright white */
+}
+
+/* CSS for unliked posts (more distinguishable dimmer white) */
+.unlikeBttn {
+  color: #c0c0c0; /* Light gray with a noticeable difference from white */
+}
+
+
+/* Create Post Page CSS */
+.CreatePostPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  width: 100%;
+}
+
+.card {
+  border: 2px solid dodgerblue;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.card #inputCreatePost {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: darkblue;
+}
+
+span {
+  color: red;
+}
+
+/* Post.css */
+
+.postpage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f0f2f5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.leftside, .rigtside {
+  flex: 1;
+  margin: 0 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.leftside {
+  margin-right: 10px;
+}
+
+/* Styling the right side of the Post page */
+.rigtside {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addCommentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.inputComment {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addCommentButton {
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addCommentButton:hover {
+  background-color: darkblue;
+}
+
+.listOfComments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+
+.title {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.body {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.footer {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Login Page CSS */
+.LoginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  width: 100%;
+}
+
+.card {
+  border: 2px solid dodgerblue;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.card #inputLogin {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: darkblue;
+}
+
+/* Registration Page CSS */
+.RegistrationPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  width: 100%;
+}
+
+.card {
+  border: 2px solid dodgerblue;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.card #inputRegistration {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: darkblue;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
